@@ -1,177 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EMX AI LABS — AI Systems Engineer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMX AI Labs - AI Automation Agency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cursor-glow" id="glow"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+           <div class="logo">
+	    <img src="emx_logo.jpg" alt="EMX AI LABS Logo"></div>
+            <ul class="nav-menu">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
 
-<!-- ================= NAV ================= -->
-    
-<nav>
-<div class="container nav-inner">
-<div class="logo">EMX AI LABS</div>
-<div>
-<a href="#products">Products</a>
-<a href="#architecture">Architecture</a>
-<a href="#platform">Platform</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build <span class="gradient-text">Intelligent Systems</span> at Scale</h1>
+            <p>Production-ready AI solutions: RAG pipelines, intelligent agents, and scalable infrastructure that turns your data into competitive advantage.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Start Building</button>
+                <button class="btn btn-secondary">View Our Work</button>
+            </div>
+        </div>
+    </section>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-<div class="container panel reveal">
-<h1>
-Building <span>Intelligent AI Systems for Real-World Impact</span>
-</h1
+    <!-- Products Section -->
+    <section id="products" class="features">
+        <h2 class="section-title">Our <span class="gradient-text">AI Products</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>ChatPDF</h3>
+                <p>Upload documents and have natural conversations powered by semantic retrieval, vector search, and LLM reasoning. Extract insights from your data instantly.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>RAG Knowledge Platform</h3>
+                <p>Enterprise-grade document ingestion with embeddings, metadata filtering, and evaluation pipelines. Build knowledge systems that scale.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Agents</h3>
+                <p>Autonomous agents capable of reasoning, planning, and executing complex enterprise workflows. Coming soon to transform your operations.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+        </div>
+    </section>
 
-<p>
-Production-ready LLM applications, RAG pipelines, intelligent agents,
-and scalable AI infrastructure.
-</p>
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <h2 class="section-title">System <span class="gradient-text">Architecture</span></h2>
+        <div class="arch-grid">
+            <div class="arch-box">
+                <h4>Frontend Layer</h4>
+                <p>React-based user interfaces sending conversational requests with real-time interaction patterns.</p>
+            </div>
+            <div class="arch-box">
+                <h4>API Orchestration</h4>
+                <p>FastAPI backend handling conversation routing, request orchestration, and intelligent dispatching.</p>
+            </div>
+            <div class="arch-box">
+                <h4>Vector Retrieval</h4>
+                <p>Qdrant-powered semantic search and embeddings for efficient knowledge extraction.</p>
+            </div>
+            <div class="arch-box">
+                <h4>LLM Reasoning</h4>
+                <p>Context injection and response generation powered by state-of-the-art language models.</p>
+            </div>
+            <div class="arch-box">
+                <h4>Data Persistence</h4>
+                <p>PostgreSQL and vector databases ensuring reliable data storage at scale.</p>
+            </div>
+            <div class="arch-box">
+                <h4>Deployment</h4>
+                <p>Docker containerization, HuggingFace Spaces, and cloud inference for seamless production.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="buttons">
-<a class="btn" href="#">Try ChatPDF</a>
-<a class="btn" href="#">View GitHub</a>
-<a class="btn" href="#">Architecture</a>
-</div>
-</div>
-</section>
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="features">
+        <h2 class="section-title">What We <span class="gradient-text">Build</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>RAG Systems</h3>
+                <p>Retrieval-Augmented Generation pipelines that enhance LLM reasoning with relevant context.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Backend Engineering</h3>
+                <p>FastAPI services, async pipelines, and multi-database architectures for production AI systems.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Scalable Infrastructure</h3>
+                <p>Cloud-native deployment, containerization, and monitoring for enterprise-grade AI applications.</p>
+                <a href="#" class="card-link">Learn more →</a>
+            </div>
+        </div>
+    </section>
 
-<!-- ================= PRODUCTS ================= -->
-<section id="products">
-<div class="container">
-<h2 class="section-title reveal">AI Products</h2>
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's build intelligent systems that scale. Get in touch to discuss your AI automation needs.</p>
+        <button class="cta-button">Contact Us Today</button>
+    </section>
 
-<div class="grid">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EMX AI LABS | Building the future of AI automation</p>
+            <div class="footer-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </footer>
 
-<div class="card reveal">
-<h3>ChatPDF</h3>
-<p>
-Upload documents and chat with knowledge using semantic retrieval,
-vector search, and LLM reasoning.
-</p>
-</div>
-
-<div class="card reveal">
-<h3>RAG Knowledge Platform</h3>
-<p>
-Document ingestion, embeddings, metadata filtering,
-evaluation and monitoring pipeline.
-</p>
-</div>
-
-<div class="card reveal">
-<h3>AI Agents (Coming)</h3>
-<p>
-Autonomous agents capable of reasoning, planning,
-and executing enterprise workflows.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- ================= ARCHITECTURE ================= -->
-<section id="architecture">
-<div class="container panel reveal">
-
-<h2 class="section-title">System Architecture</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>User Interface</h3>
-<p>React frontend sending conversational requests.</p>
-</div>
-
-<div class="card">
-<h3>FastAPI Backend</h3>
-<p>API orchestration, conversation handling, routing.</p>
-</div>
-
-<div class="card">
-<h3>Vector Retrieval</h3>
-<p>Qdrant semantic search with embeddings.</p>
-</div>
-
-<div class="card">
-<h3>LLM Reasoning</h3>
-<p>Context injection + response generation.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- ================= PLATFORM ================= -->
-<section id="platform">
-<div class="container">
-<h2 class="section-title reveal">AI Platform Capabilities</h2>
-
-<div class="grid">
-
-<div class="card reveal">
-<h3>AI Infrastructure</h3>
-<p>
-RAG systems, embeddings, evaluation pipelines,
-and intelligent retrieval architectures.
-</p>
-</div>
-
-<div class="card reveal">
-<h3>Backend Engineering</h3>
-<p>
-FastAPI services, async pipelines,
-PostgreSQL and vector databases.
-</p>
-</div>
-
-<div class="card reveal">
-<h3>Deployment</h3>
-<p>
-HuggingFace Spaces, Docker containers,
-cloud inference environments.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-<div class="container panel reveal">
-
-<h2 class="section-title">Let's Build Intelligent Systems</h2>
-
-<div class="buttons">
-<a class="btn" href="#">GitHub</a>
-<a class="btn" href="#">LinkedIn</a>
-<a class="btn" href="#">Email</a>
-</div>
-
-</div>
-</section>
-
-<footer>
-EMX AI LABS © 2026
-</footer>
-<script src="main.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
